@@ -20,3 +20,13 @@ class Solution {
         }
     }
 }
+//... this is the second ques for this day 
+
+class Solution{
+    modify(s){
+        //code here
+        let res = s.replaceAll(" ","")
+        
+        return res
+    }
+}
