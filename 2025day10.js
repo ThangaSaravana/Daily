@@ -42,3 +42,18 @@ class Solution{
         return n
     }
 }
+
+
+//sort a string 
+
+
+class Solution {
+    //Function to sort the given string.
+    sort(s)
+    {
+        //your code here
+        let str = s.split("").sort().join("")
+        
+        return str
+    }
+}
