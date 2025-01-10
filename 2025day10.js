@@ -30,3 +30,15 @@ class Solution
         
     }
 }
+
+
+/// Set Kth bit 
+
+
+class Solution{
+    setKthBit(n, k){
+        //code here
+        n = n|(1<<k)
+        return n
+    }
+}
