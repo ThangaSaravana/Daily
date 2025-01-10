@@ -75,3 +75,46 @@ class Solution{
         return count
     }
 }
+
+//minimum product of K integers in java 
+
+
+class Solution {
+
+    int minProduct(int arr[], int k) {
+        // Complete the function
+        int n = arr.length;
+        
+        Arrays.sort(arr);
+        
+        long prod = 1;
+        
+        for(int i = 0;i<k;i++){
+            
+            prod = (prod*arr[i])%1000000007;
+        }
+        
+        return (int)prod;
+    }
+}
+
+
+// minimum product of K integers in js 
+
+class Solution {
+    // Function to find minimum product of triplet.
+    minProduct(arr, k) {
+        // your code here
+        let product = 1
+        const MOD = 1000000007;
+        let nwarr = arr.sort((a,b)=>a-b)
+        
+        for(let i = 0;i<k;i++){
+            
+            product =   (product*nwarr[i])%MOD
+            
+        }
+        
+        return product
+    }
+}
