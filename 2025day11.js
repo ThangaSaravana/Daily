@@ -17,3 +17,15 @@ class Solution {
        return ans.reverse()
     }
 }
+// sort 0s and 1s
+
+
+//..this is the second question for day 11
+class Solution {
+    // Function to sort an array of 0s, 1s, and 2s
+    sort012(arr) {
+        // your code here
+        let arr2 = arr.sort((a,b)=>a-b)
+        return arr2
+    }
+}
