@@ -61,3 +61,21 @@ class Solution {
          return out;
     }
 }
+
+//3rd problem nth fibonacci number - gfg
+
+class Solution {
+    nthFibonacci(n) {
+        // your code here
+        
+        let arr = [0,1]
+        
+        for(let i = 2;i<=n;i++){
+            let ele = arr[arr.length-2]+arr[arr.length-1]
+            arr.push(ele)
+        }
+        
+        return arr[n]
+        
+    }
+}
