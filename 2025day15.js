@@ -46,3 +46,18 @@ class Solution {
         }
     }
 }
+/// Third question for the day ...done with the help of chatgpt
+
+// reverse words gfg
+class Solution {
+    // Function to reverse words in a given string.
+    reverseWords(s) {
+        // code here
+         let trimmed = s.trim();
+         // Split by spaces and filter out any empty strings (caused by multiple spaces)
+         let arr = trimmed.split(/\s+/);
+         // Reverse the array and join it with a single space
+         let out = arr.reverse().join(" ");
+         return out;
+    }
+}
