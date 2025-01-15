@@ -103,3 +103,18 @@ class Solution {
 }
 
 //..but it exceeds the time limit.....for two loops obviously it is O(n^2)
+
+
+//fifth ques for the day finding square root - gfg
+
+class Solution {
+
+    floorSqrt(n) {
+        // your code here
+        let ans =  Math.sqrt(n)
+        
+        let final = Math.floor(ans)
+        
+        return final
+    }
+}
