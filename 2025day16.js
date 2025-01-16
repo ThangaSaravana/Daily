@@ -19,3 +19,24 @@ class Solution {
 }
 
 // this is the first question for the day and the question is moving all zeros to the end of the array ...here i dont want to create an extra array ...modify the same array
+
+//...second question for the day......Transition Point gfg
+
+
+class Solution {
+    transitionPoint(arr) {
+        // code here
+        if(arr[0]==1){
+            return 0
+        }
+        
+        for(let i = 0;i<arr.length;i++){
+            if(arr[i]!==0){
+                return i
+                break
+            }
+        }
+        
+        return -1
+    }
+}
