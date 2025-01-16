@@ -40,3 +40,37 @@ class Solution {
         return -1
     }
 }
+
+//...the third program of the day...find pair given difference.........
+
+class Solution {
+    /**
+     * @param number[] arr
+     * * @param number x
+     * @returns boolean
+     */
+    findPair(arr, x) {
+        // code here
+        
+        if(arr.length==1){
+            return false
+        }
+        
+        
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length;j++){
+                if(i==j){
+                    continue
+                }else{
+                    let ans = arr[i]-arr[j]
+                    
+                    if(Math.abs(ans)==x){
+                        return true
+                    }
+                }
+            }
+        }
+        
+        return false
+    }
+}
