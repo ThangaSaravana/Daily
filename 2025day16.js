@@ -70,6 +70,31 @@ class Solution {
                 }
             }
         }
+
+//....fourth question for the day ..........wave array..........
+
+        class Solution {
+    // arr: input array
+    // Function to sort the array into a wave-like array.
+    convertToWave(arr) {
+        // your code here
+        
+        let n = arr.length
+        
+        if(n%2!==0){
+            n = n-1
+        }
+        
+        
+        for(let i =0;i<n;i+=2){
+            let temp =  arr[i]
+            arr[i]=arr[i+1]
+            arr[i+1]= temp
+        }
+        
+        return arr
+    }
+}
         
         return false
     }
