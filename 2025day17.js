@@ -19,3 +19,23 @@ class Solution {
         return finalans
     }
 }
+
+//..second problem ...floor in sorted arr 
+
+class Solution {
+
+    findFloor(arr, k) {
+        // your code here
+ 
+        
+        for(let i = 0;i<arr.length;i++){
+            if(arr[i]<=k && arr[i+1]<=k){
+               continue;
+            }else if(arr[i]<=k){
+                return i
+            }
+        }
+        
+        return -1
+    }
+}
