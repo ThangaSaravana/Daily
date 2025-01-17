@@ -39,3 +39,29 @@ class Solution {
         return -1
     }
 }
+
+///..third program of the day ..................first repeating elements ...time limit exceeded.......
+
+
+ * @returns {number}
+ */
+
+class Solution {
+    // Function to return the position of the first repeating element.
+    firstRepeated(arr) {
+        // your code here
+        for(let i = 0;i<arr.length;i++){
+            for(let j=0;j<arr.length;j++){
+                if(i==j){
+                    continue
+                }else{
+                    if(arr[i]==arr[j]){
+                        return i+1
+                    }
+                }
+            }
+        }
+        
+        return -1
+    }
+}
