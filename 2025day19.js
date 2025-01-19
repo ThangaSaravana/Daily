@@ -24,6 +24,28 @@ class Solution {
            ans.push(A1)
            
         }
+
+//second ques for the day ....
+
+
+        class Solution{
+    printTillN(n){
+        //code here
+        
+        const printnum = (n)=>{
+            
+             if(n>0){
+                 printnum(n-1)
+                 process.stdout.write(n + " "); 
+             }
+             
+             return;
+        }
+        
+        printnum(n)
+    }
+}
+
         
         return ans[n-1]
     }
