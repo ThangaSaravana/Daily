@@ -162,3 +162,75 @@ This algorithm efficiently finds the balance point by:
 In our story, the see-saw balanced at position `2`, and everyone had fun! 😊
 
 */
+
+
+//missing and repeating ...gfg 
+
+/// by ceating a new array 
+
+class Solution {
+    // Function to find two repeating elements in an array of size n.
+    findTwoElement(arr) {
+        // code here
+        
+        let ans = []
+        
+        for(let i =0 ;i<arr.length-1;i++){
+            
+            if(arr[i]==arr[i+1]){        // this works only for consecutive repeating elements 
+                ans.push(arr[i])
+            }
+            
+            
+        }
+        for(let i = 1;i<=arr.length;i++){
+            
+           if(!arr.includes(i)){
+                ans.push(i)
+            }
+            
+            
+        }
+        
+      
+        
+        return ans
+    }
+}
+/// but we have to solve the question without creating the new array
+
+//..This is the correct bruteforce solution for this question ......missing and repeating ......
+
+class Solution {
+    // Function to find two repeating elements in an array of size n.
+    findTwoElement(arr) {
+        // code here
+        
+       let repeating;
+       
+       let missing;
+       
+       for(let i = 1;i<=arr.length;i++){
+             let count = 0
+             
+             for(let j= 0;j<arr.length;j++){
+                 if(i==arr[j]){
+                     count ++
+                 }
+             }
+             
+             if(count == 2){
+                 repeating = i
+             }else if(count == 0){
+                 missing = i
+             }
+       }
+       
+       return [repeating,missing]
+     
+    }
+}
+
+//.... using hashmap can reduce the time complexity ............
+
+///...solved this question with take u forward with implementing a hasharr ..... in c++ that will be in c+++ 
