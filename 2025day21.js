@@ -234,3 +234,33 @@ class Solution {
 //.... using hashmap can reduce the time complexity ............
 
 ///...solved this question with take u forward with implementing a hasharr ..... in c++ that will be in c+++ 
+
+
+/// reverse subarray in  gfg ...............  
+class Solution {
+    reverseSubArray(arr, l, r) {
+        // code here
+        
+        let first = []
+        let mid = []
+        let end = []
+        
+        for(let i =0 ;i<l-1;i++){
+            first.push(arr[i])
+        }
+        
+        for(let i = r-1;i>=l-1;i--){
+            mid.push(arr[i])
+        }
+        
+        for(let i = r;i<arr.length;i++){
+            end.push(arr[i])
+        }
+        
+        // console.log(mid)
+        
+        let ans = [...first,...mid,...end]
+        
+        return ans
+    }
+}
