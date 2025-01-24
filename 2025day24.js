@@ -50,3 +50,22 @@ class Solution{
     }
     }
 }
+
+//... sum of alternate product .. gfg 
+
+class Solution {
+    altProduct(arr) {
+        // Your code goes here
+        let sum = 0
+        let nwarr = arr.sort((a,b)=>a-b)
+        let n = arr.length-1
+        
+        for(let i= 0;i<arr.length/2;i++){
+            let prod = nwarr[i]*nwarr[n-i]
+            sum+=prod
+        }
+        
+        return sum
+        
+    }
+}
