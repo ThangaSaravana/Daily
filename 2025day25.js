@@ -24,3 +24,25 @@ class Solution {
         return ans
     }
 }
+//... this is the second brute force approach where we alter the original array and the time complexity is  O(2n)
+
+class Solution {
+    pushZerosToEnd(arr) {
+        // code here
+        let ans = []
+        
+        for(let i = 0;i<arr.length;i++){
+            if(arr[i]!==0){
+                ans.push(arr[i])
+            }
+        }
+        
+        for(let i = 0;i<ans.length;i++){
+            arr[i]=ans[i]
+        }
+        
+        for(let i = ans.length;i<arr.length;i++){
+            arr[i]=0
+        }
+    }
+}
