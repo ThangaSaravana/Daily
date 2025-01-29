@@ -11,3 +11,17 @@ class Solution {
         // write your else statement here
     }
 }
+class Solution{
+    LastIndex(s, p){
+        //code here
+        let ind = -1 
+        
+        for(let i = 0;i<s.length;i++){
+            if(p===s[i]){
+                ind = i
+            }
+        }
+        
+        return ind 
+    }
+}
