@@ -78,3 +78,22 @@ class Solution {
     }
 }
 // it looks so optimal and has a time complexity of O(n1+n2+n3)...........
+
+
+// two sum pair with given sum .............gfg my brute force approach hits the time lint O(n^2)
+
+class Solution {
+    twoSum(arr, target) {
+        // code here
+        
+        for(let i=0;i<arr.length;i++){
+            for(let j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==target){
+                    return true;
+                }
+            }
+        }
+        
+          return false
+    }
+}
