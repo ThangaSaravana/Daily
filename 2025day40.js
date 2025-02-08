@@ -1,3 +1,4 @@
+//Amstrong Number --->  gfg
 class Solution {
     armstrongNumber(n) {
         // code here
@@ -20,5 +21,39 @@ class Solution {
         }else{
             return false
         }
+    }
+}
+//...ceil the floor --gfg
+
+class Solution {
+    getFloorAndCeil(x, arr) {
+        // code here
+        let floor = -1
+        let ceil = -1
+        
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]<=x){
+                if(floor!=-1){
+                    let num = Math.max(arr[i],floor)
+                    floor = num
+                }else{
+                    floor = arr[i] 
+                }
+               
+            }
+            if(arr[i]>=x){
+                if(ceil!=-1){
+                    let num = Math.min(arr[i],ceil)
+                    ceil = num
+                }else{
+                    ceil = arr[i]
+                }
+                
+            }
+        }
+        
+        let ans = [floor,ceil]
+        
+        return ans
     }
 }
